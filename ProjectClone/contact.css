@@ -1,0 +1,69 @@
+.image-section {
+  background-image: url("https://themes.muffingroup.com/be/library/wp-content/uploads/2015/07/home_library_contact.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.contact-icon {
+  font-size: 40px;
+  font-weight: 800;
+  color: #957230;
+  margin-bottom: 15px;
+  letter-spacing: 0.2em;
+}
+
+.contact-title {
+  font-weight: 700;
+  font-size: 45px;
+  letter-spacing: 0.2em;
+  color: #957230;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contact-text {
+  color: #957230;
+}
+
+.btn-submit {
+  background: transparent;
+  border: 2px solid #957230;
+  color: #957230;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.btn-submit:hover {
+  background: #957230;
+  color: #fff;
+}
+
+.form-control {
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  border-color: #957230;
+  box-shadow: 0 0 0 0.2rem rgba(149, 114, 48, 0.25);
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+@media (max-width: 600px) {
+  .image-section {
+    display: none;
+  }
+
+  .contact-title {
+    font-size: 25px;
+  }
+}

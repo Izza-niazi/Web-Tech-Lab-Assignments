@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Library</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <!-- Desktop Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <svg
+          class="logo-icon"
+          viewBox="0 0 64 20"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <rect x="6" y="2" width="8" height="16" fill="#fff" />
+          <rect x="28" y="2" width="8" height="16" fill="#fff" />
+          <rect x="50" y="2" width="8" height="16" fill="#fff" />
+        </svg>
+        <div class="logo-name">LIBRARY</div>
+        <div class="logo-subtitle">BETHEME LAYOUT</div>
+      </div>
+      <nav class="nav-menu">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="#">History</a>
+        <a class="nav-link" href="#">Our Collections</a>
+        <a class="nav-link" href="#">Events</a>
+        <a class="nav-link active" href="contact.html">Contact Us</a>
+      </nav>
+    </aside>
+
+    <!-- Mobile Navigation -->
+    <input id="mobileMenuToggle" type="checkbox" hidden />
+    <header class="mobile-header">
+      <div class="mobile-logo">
+        <svg
+          width="28"
+          height="16"
+          viewBox="0 0 64 20"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <rect x="6" y="2" width="8" height="16" fill="#fff" />
+          <rect x="28" y="2" width="8" height="16" fill="#fff" />
+          <rect x="50" y="2" width="8" height="16" fill="#fff" />
+        </svg>
+        <div>LIBRARY</div>
+      </div>
+      <label
+        class="mobile-menu-button"
+        for="mobileMenuToggle"
+        aria-label="Toggle menu"
+      >
+        <span></span><span></span><span></span>
+      </label>
+    </header>
+
+    <label for="mobileMenuToggle" class="mobile-overlay"></label>
+    <nav class="mobile-menu">
+      <a class="mobile-link" href="index.html">Home</a>
+      <a class="mobile-link" href="#">History</a>
+      <a class="mobile-link" href="#">Our Collections</a>
+      <a class="mobile-link" href="#">Events</a>
+      <a class="mobile-link active" href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container-fluid p-0">
+        <div class="row">
+          <!-- image section -->
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="image-section"></div>
+          </div>
+
+          <!-- contact form section -->
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div
+              class="p-5 d-flex flex-column justify-content-center text-center"
+            >
+              <div class="mb-5">
+                <div class="contact-icon">|||</div>
+                <h1 class="contact-title">Contact Us</h1>
+              </div>
+
+              <div class="mb-4">
+                <h3 class="fw-light text-dark mb-3">Contact info</h3>
+                <p class="text-muted mb-3">
+                  Duis sed odio sit amet nibh vulputate amet mauris morbi
+                  accums.
+                </p>
+                <div class="contact-text fw-medium">
+                  <div>+61 (0) 3 8376 6284</div>
+                  <div>noreply@envato.com</div>
+                </div>
+              </div>
+
+              <!-- form -->
+              <div>
+                <h3 class="fw-light text-dark mb-4">Send me a message</h3>
+                <form
+                  id="contactForm"
+                  novalidate
+                  class="mx-auto"
+                  style="max-width: 640px"
+                >
+                  <div class="row g-3 text-start">
+                    <div class="col-12 col-md-6">
+                      <label for="name" class="form-label">Name</label>
+                      <input
+                        id="name"
+                        type="text"
+                        class="form-control"
+                        placeholder="Your name"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please enter at least 3 characters.
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        id="email"
+                        type="email"
+                        class="form-control"
+                        placeholder="you@example.com"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please enter a valid email.
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label for="subject" class="form-label">Subject</label>
+                      <input
+                        id="subject"
+                        type="text"
+                        class="form-control"
+                        placeholder="Subject"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please enter a subject.
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea
+                        id="message"
+                        class="form-control"
+                        rows="5"
+                        placeholder="Your message"
+                        required
+                      ></textarea>
+                      <div class="invalid-feedback">
+                        Please enter your message.
+                      </div>
+                    </div>
+                    <div class="col-12 text-center">
+                      <button type="submit" class="btn btn-submit">
+                        Send a message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- jquery validation -->
+
+    <script>
+      $(function () {
+        function invalidate($field) {
+          $field.addClass("is-invalid").removeClass("is-valid");
+        }
+        function validateOk($field) {
+          $field.addClass("is-valid").removeClass("is-invalid");
+        }
+
+        function scrollToFirstError() {
+          var $first = $("#contactForm .is-invalid").first();
+          if ($first.length) {
+            $("html, body").animate({ scrollTop: $first.offset().top }, 300);
+            $first.focus();
+          }
+        }
+
+        function emailOk(v) {
+          return /^\S+@\S+\.\S+$/.test(v);
+        }
+
+        $("#contactForm input, #contactForm textarea").on(
+          "input change blur",
+          function () {
+            $(this).removeClass("is-invalid");
+          }
+        );
+
+        $("#contactForm").on("submit", function (e) {
+          var ok = true;
+          var $name = $("#name");
+          var $email = $("#email");
+          var $subject = $("#subject");
+          var $message = $("#message");
+
+          if ($name.val().trim().length < 3) {
+            invalidate($name);
+            ok = false;
+          } else {
+            validateOk($name);
+          }
+          if (!emailOk($email.val().trim())) {
+            invalidate($email);
+            ok = false;
+          } else {
+            validateOk($email);
+          }
+          if (!$subject.val().trim()) {
+            invalidate($subject);
+            ok = false;
+          } else {
+            validateOk($subject);
+          }
+          if (!$message.val().trim()) {
+            invalidate($message);
+            ok = false;
+          } else {
+            validateOk($message);
+          }
+
+          if (!ok) {
+            e.preventDefault();
+            scrollToFirstError();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
